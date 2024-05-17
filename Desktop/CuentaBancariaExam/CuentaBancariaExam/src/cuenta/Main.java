@@ -5,11 +5,11 @@ public class Main {
 
    
     public static void main(String[] args) {
-        Cuenta miCuenta;
+        CuentaAntonio miCuenta;
         double saldoActual;
         int x;
         
-        miCuenta = new Cuenta("Antonio Sánchez","1000-2365-85-123456799",4500,0);
+        miCuenta = new CuentaAntonio("Antonio Sánchez","1000-2365-85-123456799",4500,0);
         System.out.println("Saldo inicial de la cuenta: "+miCuenta.estado()+"€");
         try 
         {
@@ -25,7 +25,7 @@ public class Main {
         {
             x=200;
             System.out.println("Ingreso en cuenta de "+x+"€");
-            miCuenta.ingresar(x);
+            miCuenta.ingresar(x, 5);
         } catch (Exception e)
         {
             System.out.print("Fallo al ingresar");
